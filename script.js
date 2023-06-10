@@ -29,9 +29,13 @@ const calcBill = () => {
 	} else {
 		warning.style.display = "block"
 		warning.textContent = "Please complete both fields in red."
-		amoutInput.classList.add("red-border")
-		peopleNumberInput.classList.add("red-border")
 		billInfo.style.display = "none"
+		if (!amoutInput.value) {
+			amoutInput.classList.add("red-border")
+		}
+		if (!peopleNumberInput.value) {
+			peopleNumberInput.classList.add("red-border")
+		}
 	}
 }
 
