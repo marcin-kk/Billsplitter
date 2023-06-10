@@ -5,26 +5,27 @@
 }
 
 body {
+	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 14px;
 	color: #3a1a0f;
 	font-weight: bold;
-	font-size: 18px;
 }
 
 .wrapper {
 	width: 500px;
 	padding: 20px 20px;
-	background-color: #c68757;
+	background-color: #f5e9e1;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #3a1a0f;
 }
 
 .header {
-	position: relative;
 	height: 240px;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -46,8 +47,7 @@ body {
 }
 
 .title {
-	color: white;
-	padding: 10px 20px;
+	font-size: 32px;
 	color: #fceeed;
 }
 
@@ -78,10 +78,22 @@ input {
 
 select {
 	color: #3a1a0f;
-
 }
 
 .calculate {
 	display: block;
+	font-size: 14px;
+	font-weight: bold;
 	margin: 20px auto;
+	padding: 10px 30px;
+	background-color: #5f120d;
+	border: none;
+	color: #fceeed;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.calculate:hover {
+	cursor: pointer;
+	background-color: #12090e;
 }
