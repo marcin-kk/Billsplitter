@@ -30,6 +30,8 @@ const calcBill = () => {
 		warning.style.display = "block"
 		warning.textContent = "Please complete fields in red."
 		billInfo.style.display = "none"
+        amoutInput.classList.remove("red-border")
+        peopleNumberInput.classList.remove("red-border")
 		if (!amoutInput.value) {
 			amoutInput.classList.add("red-border")
 		}
