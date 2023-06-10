@@ -5,22 +5,83 @@
 }
 
 body {
-	background-color: rgb(0, 255, 234);
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #3a1a0f;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .wrapper {
 	width: 500px;
-    padding: 10px 20px;
-	background-color: blueviolet;
+	padding: 20px 20px;
+	background-color: #c68757;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #3a1a0f;
 }
 
 .header {
-	height: 200px;
+	position: relative;
+	height: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-image: url("./img/restaurant.jpg");
 	background-position: center;
 	background-size: cover;
+	z-index: 0;
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+
+.title {
+	color: white;
+	padding: 10px 20px;
+	color: #fceeed;
+}
+
+.subtitle {
+	color: #fceeed;
+}
+
+label,
+input {
+	display: block;
+}
+
+label {
+	padding: 15px 0;
+}
+
+input,
+select {
+	padding: 5px 0;
+	border-radius: 5px;
+	border: none;
+	background-color: #deceb2;
+}
+
+input {
+	width: 100%;
+}
+
+select {
+	color: #3a1a0f;
+
+}
+
+.calculate {
+	display: block;
+	margin: 20px auto;
 }
