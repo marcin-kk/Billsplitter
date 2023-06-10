@@ -97,3 +97,15 @@ select {
 	cursor: pointer;
 	background-color: #12090e;
 }
+
+span {
+	color: #d12f23;
+}
+
+.red-border {
+	border: 1px solid #d12f23;
+}
+
+.warning {
+	color: #d12f23;
+}
