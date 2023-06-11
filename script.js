@@ -7,11 +7,11 @@ const warning = document.querySelector(".warning")
 let billPerPerson
 
 const calcBillPerPerson = () => {
-	const amount = parseInt(amoutInput.value)
+	const amount = parseFloat(amoutInput.value)
 	const peopleNumber = parseInt(peopleNumberInput.value)
 	const tipPercent = selectTip.value
 	const tipAmount = amount * tipPercent
-	billPerPerson = Math.round((amount + tipAmount) / peopleNumber)
+	billPerPerson = ((amount + tipAmount) / peopleNumber).toFixed(2)
 	return billPerPerson
 }
 
